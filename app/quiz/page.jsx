@@ -33,6 +33,8 @@ const page = () => {
 
    }
 
+   // Calculate score and increment to next question
+
     return (
         <div className='container'>
             <h1>Pagina do Quiz</h1>
@@ -57,6 +59,16 @@ const page = () => {
                                 <span>{answer}</span>
                             </li>
                         ))}
+                        {
+                            checked ? (
+                                <button onClick={nextQuestion} className='btn'>
+                                    {activeQuestion === question.length - 1 ? 'Finalizar' : 'Proximo'}
+                                </button>
+                            ) : (
+                                <button onClick={nextQuestion} dissabled className='btn-disabled'></button>
+                            )
+                        }
+
                     </div>
                 ) : (
                     <div className='quiz-container'></div>
