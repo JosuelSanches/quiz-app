@@ -3,33 +3,33 @@ export const quiz = {
     questions: [
         {
             id: 1,
-            question: 'What is the capital of France?',
-            answers:['Madrid', 'Paris', 'Rome', 'Berlin'],
-            correctAnswer: 'Paris',    
+            question: 'Qual é o único planeta do nosso sistema solar que gira no sentido horário?',
+            answers:['Marte', 'Vênus', 'Júpiter', 'Saturno', 'Terra'],
+            correctAnswer: 'Vênus',    
         },
         {
             id: 2,
-            question: 'What is the largest planet in our solar system?',
-            answers:['Mars', 'Jupiter', 'Venus', 'Saturn'],
-            correctAnswer: 'Jupiter',    
+            question: 'Qual é o único mamífero capaz de voar?',
+            answers:['Morcego', 'Esquilo', 'Borboleta', 'Abelha'],
+            correctAnswer: 'Morcego',    
         },
         {
             id: 3,
-            question: 'What is the smallet coutry in the world?',
-            answers:['Monaco', 'Maldives', 'Vatican City', 'San Marino'],
-            correctAnswer: 'Vatican City',    
+            question: 'Qual o pais mais extenso do mundo?',
+            answers:['China', 'Maldives', 'Russia', 'Canada', 'Brasil'],
+            correctAnswer: 'Russia',    
         },
         {
             id: 4,
-            question: 'What is the most widely spoken language in the world?',
-            answers:['English', 'Mandarin', 'Spanish', 'Hindi'],
-            correctAnswer: 'English',    
+            question: 'Qual o maior oceano do mundo?',
+            answers:['Oceano Atlantico', 'Oceano Indico', 'Oceano Pacifico', 'Oceano Artico', 'Mar Mediterraneo'],
+            correctAnswer: 'Oceano Pacifico',    
         },
         {
             id: 5,
-            question: 'who is the founder of microsoft?',
-            answers:['Steve Jobs', 'Bill Gates', 'Elon Musk', 'Mark Zuckerberg'],
-            correctAnswer: 'Bill Gates',    
+            question: 'Qual e o numero de lados de um heptagono?',
+            answers:['cinco', 'seis', 'sete', 'oito', 'nove'],
+            correctAnswer: 'sete',    
         }
     ]
 }
