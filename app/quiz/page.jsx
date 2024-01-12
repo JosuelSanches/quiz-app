@@ -100,6 +100,8 @@ const page = () => {
                         <p>Total de pontos: <span>{result.score}</span></p>
                         <p>Respostas corretas: <span>{result.correctAnswers}</span></p>
                         <p>Respostas erradas: <span>{result.wrongAnswers}</span></p>
+
+                        <button onClick={()=> window.location.reload()}>Reiniciar</button>
                     </div>
                 )}
             </div>
