@@ -34,6 +34,28 @@ const page = () => {
    }
 
    // Calculate score and increment to next question
+   const nextQuestion = () =>{
+    setSelectedAnswerIndex(null)
+    setResult((prev) =>
+    selectedAnswer ?
+        {
+        ...prev,
+        score: prev.score + 5,
+        correctAnswers: prev.correctAnswers + 1
+        } : {
+        ...prev,
+        wrongAnswers: prev.wrongAnswers + 1,
+        }
+    )
+    if(activeQuestion !== questions.length-1){
+        setActiveQuestion((prev) => prev + 1)
+    } else {
+        setActiveQuestion(0)
+        setShowResult(true)
+    }
+    setChecked(false)
+   }
+
 
     return (
         <div className='container'>
@@ -71,7 +93,14 @@ const page = () => {
 
                     </div>
                 ) : (
-                    <div className='quiz-container'></div>
+                    <div className='quiz-container'>
+                        <h3>Resultado</h3>
+                        <h3>Geral {(result.score /25) * 100}%</h3>
+                        <p>Total de questoes: <span>{questions.length}</span></p>
+                        <p>Total de pontos: <span>{result.score}</span></p>
+                        <p>Respostas corretas: <span>{result.correctAnswers}</span></p>
+                        <p>Respostas erradas: <span>{result.wrongAnswers}</span></p>
+                    </div>
                 )}
             </div>
         </div>
