@@ -87,7 +87,7 @@ const page = () => {
                                     {activeQuestion === question.length - 1 ? 'Finalizar' : 'Proximo'}
                                 </button>
                             ) : (
-                                <button onClick={nextQuestion} dissabled className='btn-disabled'></button>
+                                <button onClick={nextQuestion} disabled className='btn-disabled'></button>
                             )
                         }
 
